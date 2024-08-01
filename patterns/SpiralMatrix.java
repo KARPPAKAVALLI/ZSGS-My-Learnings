@@ -1,12 +1,12 @@
 // https://leetcode.com/problems/spiral-matrix/description/
 //54. Spiral Matrix
 class Solution {
-    public List<Integer> spiralOrder(int[][] matrix) {
+   public List<Integer> spiralOrder(int[][] matrix) {
         int left=0,top=0,right=matrix[0].length,bottom=matrix.length;
         ArrayList<Integer> ans=new ArrayList<>();
         while(left<right && top<bottom){
             for(int i=left;i<right;i++){
-                ans.add(matrix[left][i]);
+                ans.add(matrix[top][i]);
             }
             top++;
             for(int i=top;i<bottom;i++){
